@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog_post</title>
+</head>
+<body>
+
+    <div>
+        <h1>{{ post.title }}</h1>
+        <p>
+            Posted on: {{ post.timestamp.strftime('%B %d, %Y') }}
+        </p>
+    </div>
+
+    <div>
+        {{ post.image }}
+        <!-- <img src="../static/blogs_images/ + {{post.image}}"> -->
+        <img src="{{url_for('static',filename='blogs_images/' + post.image)}}">
+    </div>
+
+    <div>
+        {{ post.content|safe }}
+    </div>
+
+
+</body>
+</html>

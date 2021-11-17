@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="shortcut icon" type="image/png" href="../static/img/favicon.png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="./static/css/style.css" rel="stylesheet" />
+  </link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Loyalty Fox</title>
+</head>
+
+<body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+    window.addEventListener('load', function () {
+      AOS.refresh();
+    });
+  </script>
+  <!-- Start of navbar -->
+  <div style="width:100%; overflow-x:hidden">
+  <div class="container-fluid navbar2">
+    <div class="navbar2_container">
+      <div class="navbar2_item1">
+        <a href="/home"> <img class="img-fluid" src='./static/img/logo.png' width="30%" /></a>
+      </div>
+      <div class="navbar2_item2">
+        <div class="navbar2_flex_item">
+          <a class="main-links" href="/home">Home</a>
+        </div>
+        <div class="navbar2_flex_item">
+          <div onclick="dropdown2()">
+            <a class="main-links">About Us &nbsp
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg>
+            </a>
+
+          </div>
+
+          <div id="dropdownx2" class="dropdown2">
+            <div class="dropdown_links">
+              <p>
+                <a class="drop-down-link" href="/who_we_are">Who we are</a>
+              </p>
+              <hr style="background-color:grey;" />
+              <p>
+                <a class="drop-down-link" href="/what_we_do">What we do</a>
+              </p>
+              <hr style="background-color:grey;" />
+              <p>
+                <a class="drop-down-link" href="/our_mission">Our Mission</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="navbar2_flex_item">
+          <div class="dropdown1_trigger" onclick="dropdown1()">
+            <a class="active_link" href="#">Our Solutions &nbsp<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg>
+            </a>
+          </div>
+
+          <div id="dropdownx1" class="dropdown1">
+            <div class="dropdown_links">
+              <p>
+                <a class="drop-down-link" href="/multi-tenant-loyalty">Multi-Tenant Loyalty Solutions</a>
+              </p>
+              <hr style="background-color:grey;" />
+              <p>
+                <a class="drop-down-link" href="/marketing-campaigns">Marketing Campaigns</a>
+              </p>
+              <hr style="background-color:grey;" />
+              <p>
+                <a class="drop-down-link" href="/helpdesk-services">Helpdesk Services</a>
+              </p>
+              <hr style="background-color:grey;" />
+              <p>
+                <a class="drop-down-link" href="/data-analytics">Data Management and Analytics</a>
+              </p>
+              <hr style="background-color:grey;" />
+              <p>
+                <a class="drop-down-link" href="/instant-rewards">Rewards and Fulfilment</a>
+              </p>
+              <hr style="background-color:grey;" />
+              <p>
+                <a class="drop-down-link" href="/content-and-creatives">Content and Creative Services</a>
+              </p>
+              <hr style="background-color:grey;" />
+              <p>
+                <a class="drop-down-link" href="/robust-tech">Robust Technology</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="navbar2_flex_item">
+          <a class="main-links" href="/blogs">Blogs and Testimonials</a>
+        </div>
+        <div class="navbar2_flex_item">
+          <a class="main-links" href="/ourteam">Our Team</a>
+        </div>
+        <div class="navbar2_flex_item">
+          <a class="main-links" href="/contactUS">Contact Us</a>
+        </div>
+        <div class="navbar2_flex_itemx ">
+          <div class="toggle-button-container2">
+            <button class="toggle-button" onclick="navbarToggle()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sidebarid" class="sidebar">
+    <div style="float:right;">
+      <button onclick="sidebarToggle()"
+        style="color:black;font-size:30px;font-weight:bold; padding:10px; border:none; background-color:transparent;">&times</button>
+    </div>
+    <br />
+    <br />
+    <br />
+    <a class="sidebar-link" class="active" href="/home">Home</a>
+    <hr style=" background-color:rgb(98, 98, 98)" />
+    <p class="x1" onclick="sideDrop1()"><b>About Us<b></p>
+
+    <div id="side-drop1" style="display: none;">
+      <a class="sidebar-link" href="/who_we_are">&nbspWho we are</a>
+      <a class="sidebar-link" href="/what_we_do">&nbspWhat we do</a>
+      <a class="sidebar-link" href="/our_mission">&nbspOur Mission</a>
+    </div>
+
+    <hr style="background-color:rgb(98, 98, 98)" />
+    
+    <p class="x1" onclick="sideDrop2()"><b>Our Solutions</b></p>
+    
+    <div id="side-drop2" style="display: none;">
+      <a class="sidebar-link" href="/multi-tenant-loyalty">&nbsp Multi-Tenant Loyalty Solutions</a>
+      <a class="sidebar-link" href="/marketing-campaigns">&nbsp Marketing Campaigns</a>
+      <a class="sidebar-link" href="/helpdesk-services">&nbsp Helpdesk Services</a>
+      <a class="sidebar-link" href="/data-analytics">&nbsp Data management and Analytics</a>
+      <a class="sidebar-link" href="/instant-rewards">&nbsp Rewards and Fulfilment</a>
+      <a class="sidebar-link" href="/content-and-creatives">&nbsp Content and creative services</a>
+      <a class="sidebar-link" href="/robust-tech">&nbsp Robust Technology</a>
+    </div>
+    
+    <hr style="background-color:rgb(98, 98, 98)" />
+    
+    <a class="sidebar-link" href="/blogs">Blogs and Testimonials</a>
+    <a class="sidebar-link" href="/ourteam">Our Team</a>
+    <a class="sidebar-link" href="/contactUS">Contact Us</a>
+  </div>
+
+    <!-- End navbar and side bar -->
+
+    <!-- Heading Section -->
+    <div class="container">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+          <div style="padding:20px;">
+            <p class="section_heading">Multi-Tenant<br />Loyalty Solutions</p>
+            <hr class="separator2" style="height:10px" />
+            <p class="small_text justify-align">
+              We understand that 80% of your business comes from 20% of your customers. And the fact that retention is
+              more efficient than acquiring new customers.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+          <div>
+            <img class="img-fluid" src="./static/img/our solutions/multi-tenant-loyalty.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Heading Section -->
+
+    <!-- Point Based Loyalty -->
+    <div class="umbrella_points" style="background-color:#ffdcb6;" data-aos="fade-up" data-aos-duration="2000">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+            <div style="display:flex;justify-content:center;">
+              <div class="umbrella-mnemonic-card-container">
+                <div class="umbrella-mnemonic-card">
+                  <div class="center-it">
+                    <img class="img-fluid" src="./static/img/our solutions/multi-tenant-m-1.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
+            <div style="padding:20px;">
+              <p class="umbrella_heading">Point based Loyalty Solutions</p>
+
+              <p class="small_text justify-align">Every time your customers hit the payment button, they will earn
+                points.
+                Our product catalogue is beautifully vivid and is perfect for pampering your customers. They can redeem
+                their earned points through either wallet money or cards.</p>
+              <button class="know_more" onclick="generic_km()">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Point Based Loyalty -->
+
+    <!-- Event based loyalty -->
+    <div class="umbrella_points filler-bg">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+            <div style="padding:20px;">
+              <p class="umbrella_heading">Event based Loyalty Solutions</p>
+
+              <p class="small_text justify-align">Word of mouth is the best promotion. Every time your loyal friends
+                rave
+                about just how much they love shopping at your store, via either positive product reviews, store
+                check-ins
+                or social shares, we give them a return gift.</p>
+              <button class="know_more" onclick="generic_km()">Know More</button>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+            <div style="display:flex;justify-content:center;">
+              <div class="umbrella-mnemonic-card-container">
+                <div class="umbrella-mnemonic-card">
+                  <div class="center-it">
+                    <img class="img-fluid" src="./static/img/our solutions/multi-tenant-m-2.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end event based loyalty -->
+
+    <!-- Cashback program -->
+    <div class="umbrella_points" style="background-color:#ffdcb6;" data-aos="fade-up" data-aos-duration="2000">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+            <div style="display:flex;justify-content:center;">
+              <div class="umbrella-mnemonic-card-container">
+                <div class="umbrella-mnemonic-card">
+                  <div class="center-it">
+                    <img class="img-fluid" src="./static/img/our solutions/multi-tenant-m-3.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+            <div style="padding:20px;">
+              <p class="umbrella_heading">Cashback Programs</p>
+              <hr style="width:30%; height:1px; opacity:1; " />
+              <p class="small_text justify-align">
+                Be it enterprises or customers - if there is one thing that all of us strive towards, it is savings.
+                Cashback programs are the shortest and surest route to the same, and so are discounts and promotion
+                coupons.
+              </p>
+              <button class="know_more" onclick="generic_km()">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Cashback program -->
+
+    <!-- Email and Social Media -->
+    <div class="umbrella_points filler-bg">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+            <div style="padding:20px;">
+              <p class="umbrella_heading">Email and Social Media</p>
+              <hr style="width:30%; height:1px; opacity:1; " />
+              <p class="small_text justify-align">
+                Our emails have an opening rate that you can rely on. Our social media expertise and creative ideation
+                will magnetize even the most dormant of your customers.
+              </p>
+              <button class="know_more" onclick="generic_km()">Know More</button>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+            <div style="display:flex;justify-content:center;">
+              <div class="umbrella-mnemonic-card-container">
+                <div class="umbrella-mnemonic-card">
+                  <div class="center-it">
+                    <img class="img-fluid" src="./static/img/our solutions/multi-tenant-m-4.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Email and Social Media -->
+
+    <!-- Experience based loyalty -->
+    <div class="umbrella_points" style="background-color:#ffdcb6;" data-aos="fade-up" data-aos-duration="2000">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+            <div style="display:flex;justify-content:center;">
+              <div class="umbrella-mnemonic-card-container">
+                <div class="umbrella-mnemonic-card">
+                  <div class="center-it">
+                    <img class="img-fluid" src="./static/img/our solutions/multi-tenant-m-5.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+            <div style="padding:20px;">
+              <p class="umbrella_heading">Experience based Loyalty Solutions</p>
+              <hr style="width:30%; height:1px; opacity:1; " />
+              <p class="small_text justify-align">
+                We think out-of-the-box to provide rewards that truly matter. We don’t just stick to the basics but go
+                above and beyond to include benefits like sponsored trips to emphasize a personal connection with your
+                stakeholders. Our Machine Learning capabilities aid us in tracking down the customer history and
+                devising
+                solutions that your stakeholders are bound to fall in love with.
+
+              </p>
+              <button class="know_more" onclick="generic_km()">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Experience based loyalty -->
+
+    <!-- Customer Loyalty -->
+    <div id="customerloyalty" class="container container_margin">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" data-aos="fade-up" data-aos-duration="2000">
+          <div>
+
+
+            <p class="centered_heading">Customer Loyalty Programs</p>
+            <div style="display:flex;justify-content:center">
+              <hr class="separator2" style="height:5px" />
+            </div>
+            <br />
+            <p class="small_text" style="text-align:center">
+              The intuitive loyalty solutions of Loyalty Fox are designed to keep your “brand promoters” hooked for
+              good.
+              At a six times lesser amount than what is utilized while getting new customers on board, you will be able
+              to
+              gain excellent repeat sales, build credibility and retain your customers . Run a dynamic real-time program
+              by integrating your POS system, website or mobile app with our Foxtrot loyalty engine.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+              <div class="multi-tenant-padding center-it">
+                <div class="info-card-sec-1">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-6.png"
+                      width="50%" />
+                  </div>
+                  <p class="info-card-head">Higher customer retention</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    The highly intuitive customer loyalty programs of Loyalty Fox ensure that your loyal customers stay
+                    with you in the long run. Trust us to allow them to trust you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+              <div class="multi-tenant-padding center-it">
+                <div class="info-card-sec-1">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-7.png"
+                      width="50%" />
+                  </div>
+                  <p class="info-card-head">Repeat sales generate more earnings</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    Do you know that your loyal customers will spend 18% more than your newer ones? Yes, it is a win-win
+                    situation. Retention is more economical than newer conversion and comes with bulk sales too.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+              <div class="multi-tenant-padding center-it">
+                <div class="info-card-sec-1">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-8.png"
+                      width="50%" />
+                  </div>
+                  <p class="info-card-head">Enhanced customer affinity</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    Our Machine Learning capabilities and an adept market research team tracks down the entire buyer’s
+                    persona and customer’s journey throughout the sales funnel. The resultant loyalty programs are
+                    highly
+                    targeted and make your stakeholders feel cared for. Thus, their affinity for your brand increases by
+                    leaps and bounds and they become your 24*7 salespersons.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+              <div class="multi-tenant-padding center-it">
+                <div class="info-card-sec-1">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-9.png" />
+                  </div>
+                  <p class="info-card-head">Personalization</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    Instant rewards provide an opportunity to personalize conveniently. By tracking the customer’s
+                    history
+                    and integrating instant rewards, we offer unmatched experiences which lead to a deep personal
+                    connection. Can there be a better way of ensuring loyalty? We doubt it!
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <!-- End customer loyalty -->
+
+    <!-- Channel Loyalty -->
+    <div id="channelloyalty" class="container container_margin" data-aos="fade-up" data-aos-duration="2000">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 ">
+          <div>
+            <p class="centered_heading">Channel Loyalty Programs</p>
+            <div style="display:flex;justify-content:center">
+              <hr class="separator2" style="height:5px" />
+            </div>
+            <br />
+            <p class="small_text" style="text-align:center">
+              Channel loyalty programs have a long drawn history of hit and miss. But with us, you will attain success
+              every single time. Our value-driven loyalty programs, transparent two-way communication and personalized
+              incentives preserve and promote your golden assets.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+              <div class="multi-tenant-padding">
+                <div class="info-card-sec-2">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic"
+                      src="./static/img/our solutions/multi-tenant-m-10 copy.png" />
+                  </div>
+                  <p class="info-card-head">Encouraging and incentivizing your stakeholders</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    Our smart loyalty solutions incorporate features like geo-tagging and feedback surveys to ensure
+                    that
+                    you stay in the loop. You can encourage, motivate, engage and reward all the members of your supply
+                    chain – dealers, wholesalers, agents and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+              <div class="multi-tenant-padding">
+                <div class="info-card-sec-2">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-11.png" />
+                  </div>
+                  <p class="info-card-head">Transforming connections from transactional to emotional.</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    To transform relationships from transactional to emotional, it is crucial to recognize the
+                    aspirations
+                    of your channel partners. Through Machine Learning and in-depth research, our Foxtrot Loyalty Engine
+                    builds trends to establish the offers that your partners will love.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+              <div class="multi-tenant-padding">
+                <div class="info-card-sec-2">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-12.png" />
+                  </div>
+                  <p class="info-card-head">Unparalleled ease of usage.</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    Loyalty Fox’s intuitive solutions are guaranteed to boost productivity and reduce costs. We cut down
+                    on logistics costs by way of instant reward provisions and on external training costs through our
+                    user-friendliness.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+              <div class="multi-tenant-padding">
+                <div class="info-card-sec-2">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-13.png" />
+                  </div>
+                  <p class="info-card-head">Bank on the right influencers</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    Our Foxtrot Loyalty Engine can analyse and recognize the right influencers for your platform through
+                    market studying and benchmarking. Incentivizing the right set of key drivers can be a game-changer.
+                    Thus, we employ new-age reward solutions and data-backed approaches to ensure a seamless experience.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <!-- End channel loyalty -->
+
+    <!-- Employee RnR -->
+    <div id="employeernr" class="container container_margin" data-aos="fade-up" data-aos-duration="2000">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 ">
+          <div>
+            <p class="centered_heading">Employee recognition and rewards </p>
+            <div style="display:flex;justify-content:center">
+              <hr class="separator2" style="height:5px" />
+            </div>
+            <br />
+            <p class="small_text" style="text-align:center">
+              4.7 was the Employee Happiness Index at Loyalty Fox. We are a bunch of passionate and zealous experts who
+              wake up every single day to bring a difference to our field. This commitment shines through our solutions
+              too. We practice what we preach so you can be assured that the employee recognition solutions of Loyalty
+              Fox
+              will act as a launchpad for phenomenal employee engagement and healthy competition in your organization.
+
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+              <div class="multi-tenant-padding">
+                <div class="info-card-sec-3">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-14.png" />
+                  </div>
+                  <p class="info-card-head">Measure performance, reward & recognition instantly</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    Performance tracking and monitoring are pertinent while managing your workforce. Stay in the loop by
+                    managing hierarchies, checking work schedules, having each other’s back and even wishing on
+                    birthdays
+                    to build connections that will last a lifetime. We bring in the element of fun even in the most
+                    hectic
+                    of jobs through the gamification of rewards campaigns.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+              <div class="multi-tenant-padding">
+                <div class="info-card-sec-3">
+                  <div class="center-it">
+                    <img class="img-fluid who-we-are-mnemonic" src="./static/img/our solutions/multi-tenant-m-15.png" />
+                  </div>
+                  <p class="info-card-head">Result oriented</p>
+                  <div style="display:flex; justify-content:center">
+                    <hr style="width:20%;background-color:white;opacity:1;height:1px;" />
+                  </div>
+                  <p class="info-card-content justify-align">
+                    We recognize and appreciate the unique demands of your employees and then conduct market research to
+                    set you a class apart from the rest. We believe in constantly taking corrective actions for the most
+                    optimum results. Our intuitive loyalty solutions bring forth an element of personalization that is
+                    bound to boost your employee retention rate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <!-- End Employee RnR loyalty -->
+
+    <!-- Footer -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Footer -->
+
+ <!-- ########################## FOOTER AREA ######################################### -->
+   
+   
+    <!-- Footer for responsive 768-->
+      <!-- Footer for responsive 768-->
+      <footer class="footer-resp" style="background-color: #0E0E0E;z-index:-1">
+        <div class="container-fluid">
+          <div class="center-it">
+            <div style="padding:20px;">
+              <img src="../static/img/home-page/logo_horizontal.png" class="img-fluid" width="70%" />
+              <p style="font-family:'Open Sans'; font-size:1em; color:white;">Where expertise meet empathy</p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+                <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">About Us</p>
+                <a href="/who_we_are" class="footer-link"
+                  style=" text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Who we are</a>
+                <br />
+                <a href="/what_we_do" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9m">What we do</a>
+                <br />
+                <a href="/our_mission" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Our misson</a>
+  
+              </div>
+              <div class="col-7" >
+                <div>
+                  <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Our Solutions</p>
+                  <a href="/multi-tenant-loyalty" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Multi-tenant
+                    loyalty
+                    solutions</a>
+                  <br />
+                  <a href="/marketing-campaigns" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Marketing
+                    campaigns</a>
+                  <br />
+                  <a href="/helpdesk-services" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Helpdesk
+                    services</a>
+                  <br />
+                  <a href="/data-analytics" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Data management
+                    and
+                    analytics</a>
+                  <br />
+                  <a href="/instant-rewards" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Rewards and Fulfilment</a>
+                  <br />
+                  <a href="/content-and-creatives" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Content and
+                    creative
+                    services</a>
+                  <br />
+                  <a href="/robust-tech" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Robust
+                    Technology</a>
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+              <div class="col-5">
+                <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Contact Us</p>
+                <a href="mailto:info@loyaltyfox.com" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                  </svg> &nbsp info@loyaltyfox.com
+                </a>
+                <br />
+                <a class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                  </svg> &nbsp 8802065822
+                </a>
+  
+              </div>
+              <div class="col-7">
+                <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Loyalty Programs</p>
+                <a href="/multi-tenant-loyalty#channelloyalty" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Channel loyalty
+                  programs</a>
+                <br />
+                <a href="/multi-tenant-loyalty#customerloyalty" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Customer loyalty
+                  programs</a>
+                <br />
+                <a href="/multi-tenant-loyalty#employeernr" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Employee R&R</a>
+  
+              </div>
+             
+  
+            </div>
+            <br />
+            <hr style="height:2px;background-color: grey;" />
+            <br />
+            <div class="row">
+              <div class="col">
+                <p style="font-family: 'Open Sans';color:grey;font-size:1em">&copy &nbspTechtonic Media India Pvt. Ltd.
+                </p>
+              </div>
+              <div class="col">
+                <a href="https://www.linkedin.com/company/14514361/admin/" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                  &nbsp Connect with us on Linkedin
+                </a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </footer>
+      <!-- End footer for responsive -->
+    <!-- Footer for responsive 1024 -->
+
+    <footer class="footer1024" style="background-color: #0E0E0E">
+      <br/>
+      <div class="container-fluid">
+
+        <div class="center-it">
+          <div style="padding:20px;">
+            <img src="../static/img/home-page/logo_horizontal.png" class="img-fluid" width="50%" />
+            <p style="font-family:'Open Sans'; font-size:1.5em; color:white;">Where expertise meet empathy</p>
+          </div>
+        </div>
+        <br/>
+       <div class="container-fluid" style="padding:20px;">
+        <div class="row">
+          <div class="col-2">
+            <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">About Us</p>
+              <a href="/who_we_are" class="footer-link"
+                style=" text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Who we are</a>
+              <br />
+              <a href="/what_we_do" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9m">What we do</a>
+              <br />
+              <a href="/our_mission" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Our misson</a>
+
+          </div>
+          <div class="col-4">
+            <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Our Solutions</p>
+                <a href="/multi-tenant-loyalty" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Multi-tenant
+                  loyalty
+                  solutions</a>
+                <br />
+                <a href="/marketing-campaigns" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Marketing
+                  campaigns</a>
+                <br />
+                <a href="/helpdesk-services" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Helpdesk
+                  services</a>
+                <br />
+                <a href="/data-analytics" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Data management
+                  and
+                  analytics</a>
+                <br />
+                <a href="/instant-rewards" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Rewards and Fulfilment</a>
+                <br />
+                <a href="/content-and-creatives" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Content and
+                  creative
+                  services</a>
+                <br />
+                <a href="/robust-tech" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Robust
+                  Technology
+                </a>
+          </div>
+          <div class="col-3">
+            <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Loyalty Programs</p>
+              <a href="/multi-tenant-loyalty#channelloyalty" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Channel loyalty
+                programs</a>
+              <br />
+              <a href="/multi-tenant-loyalty#customerloyalty" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Customer loyalty
+                programs</a>
+              <br />
+              <a href="/multi-tenant-loyalty#employeernr" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Employee R&R</a>
+
+          </div>
+          <div class="col-3">
+            <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Contact us</p>
+              <a href="mailto:info@loyaltyfox.com" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                </svg> &nbsp info@loyaltyfox.com
+              </a>
+              <br />
+              <a class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg> &nbsp 8802065822
+              </a>
+
+          </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="row">
+          
+          <hr style="height:2px; background-color: grey;"/>
+          <div class="footer-container3">
+            <div class="itemy1">
+              <p style="font-family: 'Open Sans';color:grey;font-size:1em">&copy &nbspTechtonic Media India Pvt. Ltd.</p>
+            </div>
+            <div class="itemy2">
+              <div style="display:flex;justify-content: flex-end;">
+                <a href="https://www.linkedin.com/company/14514361/admin/" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                  &nbsp Connect with us on Linkedin
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </footer>
+
+    <!-- End Footer for responsive 1024 -->
+    
+    <!-- Footer -->
+
+    <footer class="footer" >
+      <div class="footer-container">
+        <div class="footer-item1" style="display:flex; align-items:center; padding:20px;">
+          <div>
+            <img src="../static/img/home-page/logo_horizontal.png" class="img-fluid" width="70%" />
+            <p style="font-family:'Open Sans'; font-size:1em; color:white;">Where expertise meet empathy</p>
+          </div>
+
+        </div>
+        <div class="footer-item2">
+          <div class="footer-container2">
+            <div class="footer-itemx1" style="padding:20px;border:">
+              <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">About Us</p>
+              <a href="/who_we_are" class="footer-link"
+                style=" text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Who we are</a>
+              <br />
+              <a href="/what_we_do" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9m">What we do</a>
+              <br />
+              <a href="/our_mission" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Our misson</a>
+            </div>
+
+            <div class="footer-itemx2" style="padding:20px; ">
+              <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Our Solutions</p>
+              <a href="/multi-tenant-loyalty" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Multi-tenant
+                loyalty solutions</a>
+              <br />
+              <a href="/marketing-campaigns" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Marketing
+                campaigns</a>
+              <br />
+              <a href="/helpdesk-services" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Helpdesk
+                services</a>
+              <br />
+              <a href="/data-analytics" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Data management
+                and
+                analytics</a>
+              <br />
+              <a href="/instant-rewards" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Rewards and Fulfilment</a>
+              <br />
+              <a href="/content-and-creatives" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Content and
+                creative
+                services</a>
+              <br />
+              <a href="/robust-tech" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Robust
+                Technology</a>
+            </div>
+
+            <div class="footer-itemx3" style="padding:20px;">
+              <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Loyalty Programs</p>
+              <a href="/multi-tenant-loyalty#channelloyalty" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Channel loyalty
+                programs</a>
+              <br />
+              <a href="/multi-tenant-loyalty#customerloyalty" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Customer loyalty
+                programs</a>
+              <br />
+              <a href="/multi-tenant-loyalty#employeernr" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Employee R&R</a>
+
+
+            </div>
+            <div class="footer-itemx4" style="padding:20px;">
+              <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Contact Us</p>
+              <a href="mailto:info@loyaltyfox.com" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                </svg> &nbsp info@loyaltyfox.com
+              </a>
+              <br />
+              <a class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg> &nbsp 8802065822
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <hr style="height:2px; background-color:grey" />
+      <div class="footer-container3">
+        <div class="itemy1">
+          <p style="font-family: 'Open Sans';color:grey;font-size:1em">&copy &nbspTechtonic Media India Pvt. Ltd.</p>
+        </div>
+        <div class="itemy2">
+          <div style="display:flex;justify-content: flex-end;">
+            <a href="https://www.linkedin.com/company/14514361/admin/" class="footer-link"
+              style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+              &nbsp Connect with us on Linkedin
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- End Footer -->
+  
+  
+    <!-- ########################## END FOOTER AREA ######################################### -->
+   
+
+  </div>
+  <!-- End Footer -->
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script>
+
+    function sideDrop1(){
+      
+      disp=document.getElementById("side-drop1").style.display;
+      
+      if(disp=="block"){
+        document.getElementById("side-drop1").style.display="none";
+        
+      }
+      if(disp=="none"){
+        document.getElementById("side-drop1").style.display="block";
+      }
+    }
+
+    function sideDrop2(){
+      disp=document.getElementById("side-drop2").style.display;
+
+      if(disp=="none"){
+        document.getElementById("side-drop2").style.display="block";
+      }
+      else if(disp=="block"){
+        document.getElementById("side-drop2").style.display="none";
+      }
+    }
+
+    function navbarToggle() {
+      document.getElementById("sidebarid").style.display = "block";
+    }
+    function sidebarToggle() {
+      document.getElementById("sidebarid").style.display = "none";
+    }
+    function rewards_km() {
+      location.href = "/instant-rewards";
+    }
+    function foxtrot_km() {
+      location.href = "/robust-tech";
+    }
+    function aboutus_km() {
+      location.href = "/who_we_are";
+    }
+    function steps_km() {
+      location.href = "/what_we_do";
+    }
+
+    function blogs_km() {
+      location.href = "/blogs";
+    }
+    function generic_km() {
+      location.href = "/contactUS";
+    }
+    function dropdown1() {
+      document.getElementById("dropdownx1").style.display = "block";
+    }
+    function dropdown2() {
+      document.getElementById("dropdownx2").style.display = "block";
+    }
+
+    document.addEventListener('mouseup', function (e) {
+      var container1 = document.getElementById('dropdownx1');
+      var container2 = document.getElementById('dropdownx2');
+
+      if (!container1.contains(e.target)) {
+        container1.style.display = 'none';
+      }
+      if (!container2.contains(e.target)) {
+        container2.style.display = 'none';
+      }
+    });
+
+  </script>
+
+  <!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/615c4c42d326717cb684d9bb/1fh88jq6h';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+  <!--End of Tawk.to Script-->
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="shortcut icon" type="image/png" href="../static/img/favicon.png"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="./static/css/style.css" rel="stylesheet" />
+  </link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Loyalty Fox</title>
+</head>
+
+<body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+    window.addEventListener('load', function () {
+      AOS.refresh();
+    });
+  </script>
+  <div style="width:100%; overflow-x: hidden;">
+    <!-- Start of navbar -->
+    <div class="container-fluid navbar2">
+      <div class="navbar2_container">
+        <div class="navbar2_item1">
+          <img class="img-fluid" src='./static/img/logo.png' width="30%" />
+        </div>
+        <div class="navbar2_item2">
+          <div class="navbar2_flex_item">
+            <a class="main-links" href="/home">Home</a>
+          </div>
+          <div class="navbar2_flex_item">
+            <div onclick="dropdown2()">
+              <a class="main-links">About Us &nbsp
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+              </a>
+
+            </div>
+
+            <div id="dropdownx2" class="dropdown2">
+              <div class="dropdown_links">
+                <p>
+                  <a class="drop-down-link" href="/who_we_are">Who we are</a>
+                </p>
+                <hr style="background-color:grey;" />
+                <p>
+                  <a class="drop-down-link" href="/what_we_do">What we do</a>
+                </p>
+                <hr style="background-color:grey;" />
+                <p>
+                  <a class="drop-down-link" href="/our_mission">Our Mission</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="navbar2_flex_item">
+            <div class="dropdown1_trigger" onclick="dropdown1()">
+              <a class="active_link" href="#">Our Solutions &nbsp<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+              </a>
+            </div>
+
+            <div id="dropdownx1" class="dropdown1">
+              <div class="dropdown_links">
+                <p>
+                  <a class="drop-down-link" href="/multi-tenant-loyalty">Multi-Tenant Loyalty Solutions</a>
+                </p>
+                <hr style="background-color:grey;" />
+                <p>
+                  <a class="drop-down-link" href="/marketing-campaigns">Marketing Campaigns</a>
+                </p>
+                <hr style="background-color:grey;" />
+                <p>
+                  <a class="drop-down-link" href="/helpdesk-services">Helpdesk Services</a>
+                </p>
+                <hr style="background-color:grey;" />
+                <p>
+                  <a class="drop-down-link" href="/data-analytics">Data Management and Analytics</a>
+                </p>
+                <hr style="background-color:grey;" />
+                <p>
+                  <a class="drop-down-link" href="/instant-rewards">Instant rewards</a>
+                </p>
+                <hr style="background-color:grey;" />
+                <p>
+                  <a class="drop-down-link" href="/content-and-creatives">Content and Creative Services</a>
+                </p>
+                <hr style="background-color:grey;" />
+                <p>
+                  <a class="drop-down-link" href="/robust-tech">Robust Technology</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="navbar2_flex_item">
+            <a class="main-links" href="/blogs">Blogs and Testimonials</a>
+          </div>
+          <div class="navbar2_flex_item">
+            <a class="main-links" href="/ourteam">Our Team</a>
+          </div>
+          <div class="navbar2_flex_item">
+            <a class="main-links" href="/contactUS">Contact Us</a>
+          </div>
+          <div class="navbar2_flex_itemx ">
+            <div class="toggle-button-container2">
+              <button class="toggle-button" onclick="navbarToggle()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sidebarid" class="sidebar">
+      <div style="float:right;">
+        <button onclick="sidebarToggle()"
+          style="color:black;font-size:30px;font-weight:bold; padding:10px; border:none; background-color:transparent;">&times</button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <a class="sidebar-link" class="active" href="/home">Home</a>
+      <hr style=" background-color:rgb(98, 98, 98)" />
+      <p class="x1" onclick="sideDrop1()"><b>About Us<b></p>
+
+      <div id="side-drop1" style="display: none;">
+        <a class="sidebar-link" href="/who_we_are">&nbspWho we are</a>
+        <a class="sidebar-link" href="/what_we_do">&nbspWhat we do</a>
+        <a class="sidebar-link" href="/our_mission">&nbspOur Mission</a>
+      </div>
+
+      <hr style="background-color:rgb(98, 98, 98)" />
+      
+      <p class="x1" onclick="sideDrop2()"><b>Our Solutions</b></p>
+      
+      <div id="side-drop2" style="display: none;">
+        <a class="sidebar-link" href="/multi-tenant-loyalty">&nbsp Multi-Tenant Loyalty Solutions</a>
+        <a class="sidebar-link" href="/marketing-campaigns">&nbsp Marketing Campaigns</a>
+        <a class="sidebar-link" href="/helpdesk-services">&nbsp Helpdesk Services</a>
+        <a class="sidebar-link" href="/data-analytics">&nbsp Data management and Analytics</a>
+        <a class="sidebar-link" href="/instant-rewards">&nbsp Instant Rewards</a>
+        <a class="sidebar-link" href="/content-and-creatives">&nbsp Content and creative services</a>
+        <a class="sidebar-link" href="/robust-tech">&nbsp Robust Technology</a>
+      </div>
+      
+      <hr style="background-color:rgb(98, 98, 98)" />
+      
+      <a class="sidebar-link" href="/blogs">Blogs and Testimonials</a>
+      <a class="sidebar-link" href="/ourteam">Our Team</a>
+      <a class="sidebar-link" href="/contactUS">Contact Us</a>
+    </div>
+
+    <!-- End navbar and side bar -->
+
+    <!-- Copy till here -->
+
+    <!-- Heading Section -->
+    <div class="container">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+          <div style="padding:20px;">
+            <p class="section_heading">Rewards and Fulfilment</p>
+            <hr class="separator2" style="height:10px" />
+            <p class="small_text justify-align">
+              With 160+ BRANDS | 250+ SKUs, Bank cards & more.Our e-vouchers are as easy to acquire and redeem as the
+              tried and tested way of debit and credit cards.Pamper your stakeholders by letting them choose from more
+              than 1500+ products from the premium brands.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+          <div>
+            <img class="img-fluid" src="./static/img/our solutions/instant-rewards.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Heading Section -->
+    <br />
+
+    <!-- Instant Rewards -->
+    <div class="umbrella_points " style="background-color:#ffdcb6; ">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+            <div style="display:flex;justify-content:center;">
+              <div class="umbrella-mnemonic-card-container">
+                <div class="umbrella-mnemonic-card" style="padding:10px;">
+                  <div class="center-it">
+                    <img src="./static/img/our solutions/instant-m-1.png" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+            <div style="padding:20px;">
+              <p class="umbrella_heading">Instant Rewards</p>
+
+              <p class="small_text justify-align">Our e-vouchers are as easy to acquire and redeem as the tried and
+                tested
+                way of debit and credit cards. On the other hand, these e-rewards broaden the horizon of merchants by
+                allowing them to reach a newer demographic than they would have reached through the traditional offline
+                gift cards.
+              </p>
+              <button class="know_more" onclick="inst_rew_km()">Know More</button>
+            </div>
+          </div>
+        </div>
+        <br />
+
+
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="2000">
+      <p class="centered_heading" style="font-size:2em">Instant rewards come with 0 logistics cost and 100% trustworthy
+        delivery. </p>
+      <br />
+      <br />
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="center-it">
+              <img class="img-fluid" src="./static/img/our solutions/instant-m-3.png" width="40%" />
+
+            </div>
+            <p class="small_text" style="text-align:center;font-size:1em">They are unbelievably easy to distribute </p>
+          </div>
+          <div class="col-lg- 4 col-md-4" data-aos="fade-up" data-aos-duration="1500">
+            <div class="center-it">
+              <img class="img-fluid" src="./static/img/our solutions/instant-m-4.png" width="40%" />
+
+            </div>
+            <p class="small_text" style="text-align:center;font-size:1em">A dash of personalization will make your
+              stakeholders fall in love with your brand all over again </p>
+          </div>
+          <div class="col-lg- 4 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="center-it">
+              <img class="img-fluid" src="./static/img/our solutions/instant-m-5.png" width="40%" />
+
+            </div>
+            <p class="small_text" style="text-align:center;font-size:1em">Our e-vouchers are intrinsically safe to use.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br />
+
+
+    <!-- End Instant Rewards -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Bank Cards -->
+    <div class="umbrella_points container-margin" style="background-color:#ffdcb6; margin-top:-3em;">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div id="bank-cards" class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+            <div style="padding:20px;">
+              <p class="umbrella_heading">Bank Cards</p>
+
+              <p class="small_text justify-align">There are two sides to a successful card loyalty program - customer
+                happiness and revenue generation. At Loyalty Fox, we provide the best of both worlds.
+              </p>
+              <button class="know_more" onclick="generic_km()">Know More</button>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+            <div style="display:flex;justify-content:center;">
+              <div class="umbrella-mnemonic-card-container">
+                <div class="umbrella-mnemonic-card" style="padding:10px;">
+                  <div class="center-it">
+                    <img src="./static/img/our solutions/instant-m-2.png" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Bank Cards -->
+    <br />
+    <br />
+    <div class="filler-bg" style="width:100%; height:15em">
+
+    </div>
+    <br />
+
+    <!-- Product Fulfillment -->
+    <div class=" overlay_on_this">
+      <div class="" style="background-color: #ffdcb6; z-index:-1;height: 27em; ">
+        <br />
+        <br />
+        <p class="umbrella_heading" style="text-align:center;">Product fulfillment</p>
+        <div style="display:flex;justify-content:center">
+          <hr style="border-radius:10px; background-color:black;height:5px;width:10%;opacity:1" />
+        </div>
+        <br />
+        <br />
+        <div class=" container white-card-whoweare">
+          <div class="umbrella_points" style="margin-top:-3em;">
+            <div class="container">
+              <div class="row align-items-center justify-content-center filler-bg">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                  <div style="display:flex;justify-content:center;">
+                    <div class="umbrella-mnemonic-card-container">
+                      <div class="umbrella-mnemonic-card">
+                        <div class="center-it col-padding">
+                          <img class="img-fluid justify-align" src="./static/img/our solutions/instant-m-6.png" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
+                  <div class="whatwedo_text_padding">
+                    <p class="umbrella_heading" style="color:#333;font-size:2em">Robust ERP system</p>
+                    <p class="small_text justify-align">
+
+                      Our robust ERP system seamlessly integrates with our client’s eco-system to provide impeccable
+                      product redemption services. Our smooth address verification engine, seamless inventory management
+                      and real time order delivery confirmation systems work in sync to provide a fantastic user
+                      experience.
+
+
+                    </p>
+                    <button class="know_more" onclick="generic_km()">Know More</button>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <br />
+              <div class="row align-items-center justify-content-center">
+
+                <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-2" data-aos="fade-left"
+                  data-aos-duration="2000">
+                  <div class="whatwedo_text_padding">
+                    <p class="umbrella_heading" style="color:#333;font-size:2em">Choose from numerous products and
+                      premium
+                      brands</p>
+                    <p class="small_text justify-align">
+
+                      Pamper your stakeholders by letting them choose from more than 1500+ products from the premium
+                      brands.
+
+                    </p>
+                    <button class="know_more" onclick="generic_km()">Know More</button>
+                  </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-1" data-aos="fade-right"
+                  data-aos-duration="2000">
+                  <div style="display:flex;justify-content:center;">
+                    <div class="umbrella-mnemonic-card-container">
+                      <div class="umbrella-mnemonic-card">
+                        <div class="center-it col-padding">
+                          <img class="img-fluid " src="./static/img/our solutions/instant-m-7.png" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <br />
+
+              <div class="row align-items-center justify-content-center filler-bg">
+                <div class="col-lg-6 " data-aos="fade-right" data-aos-duration="2000">
+                  <div style="display:flex;justify-content:center;">
+                    <div class="umbrella-mnemonic-card-container">
+                      <div class="umbrella-mnemonic-card">
+                        <div class="center-it col-padding">
+                          <img class="img-fluid " src="./static/img/our solutions/instant-m-8.png" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 " data-aos="fade-left" data-aos-duration="2000">
+                  <div class="whatwedo_text_padding">
+                    <p class="umbrella_heading" style="color:#333;font-size:2em">Gift vouchers and delivery tracking</p>
+                    <p class="small_text justify-align">
+
+                      Alternatively, we can also provide gift vouchers from more than 170 brands and the delivery is
+                      tracked in real-time till the closure of the order and client billing.
+
+                    </p>
+                    <button class="know_more" onclick="generic_km()">Know More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- End Instant Rewards -->
+
+
+     <!-- ########################## FOOTER AREA ######################################### -->
+   
+      <!-- Footer for responsive 768-->
+      <footer class="footer-resp" style="background-color: #0E0E0E;z-index:-1">
+        <div class="container-fluid">
+          <div class="center-it">
+            <div style="padding:20px;">
+              <img src="../static/img/home-page/logo_horizontal.png" class="img-fluid" width="70%" />
+              <p style="font-family:'Open Sans'; font-size:1em; color:white;">Where expertise meet empathy</p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-5">
+                <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">About Us</p>
+                <a href="/who_we_are" class="footer-link"
+                  style=" text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Who we are</a>
+                <br />
+                <a href="/what_we_do" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9m">What we do</a>
+                <br />
+                <a href="/our_mission" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Our misson</a>
+  
+              </div>
+              <div class="col-7" >
+                <div>
+                  <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Our Solutions</p>
+                  <a href="/multi-tenant-loyalty" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Multi-tenant
+                    loyalty
+                    solutions</a>
+                  <br />
+                  <a href="/marketing-campaigns" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Marketing
+                    campaigns</a>
+                  <br />
+                  <a href="/helpdesk-services" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Helpdesk
+                    services</a>
+                  <br />
+                  <a href="/data-analytics" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Data management
+                    and
+                    analytics</a>
+                  <br />
+                  <a href="/instant-rewards" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Instant
+                    rewards</a>
+                  <br />
+                  <a href="/content-and-creatives" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Content and
+                    creative
+                    services</a>
+                  <br />
+                  <a href="/robust-tech" class="footer-link"
+                    style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Robust
+                    Technology</a>
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+              <div class="col-5">
+                <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Contact Us</p>
+                <a href="mailto:info@loyaltyfox.com" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                  </svg> &nbsp info@loyaltyfox.com
+                </a>
+                <br />
+                <a class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                  </svg> &nbsp 8802065822
+                </a>
+  
+              </div>
+              <div class="col-7">
+                <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Loyalty Programs</p>
+                <a href="/multi-tenant-loyalty#channelloyalty" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Channel loyalty
+                  programs</a>
+                <br />
+                <a href="/multi-tenant-loyalty#customerloyalty" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Customer loyalty
+                  programs</a>
+                <br />
+                <a href="/multi-tenant-loyalty#employeernr" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Employee R&R</a>
+  
+              </div>
+             
+  
+            </div>
+            <br />
+            <hr style="height:2px;background-color: grey;" />
+            <br />
+            <div class="row">
+              <div class="col">
+                <p style="font-family: 'Open Sans';color:grey;font-size:1em">&copy &nbspTechtonic Media India Pvt. Ltd.
+                </p>
+              </div>
+              <div class="col">
+                <a href="https://www.linkedin.com/company/14514361/admin/" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                  &nbsp Connect with us on Linkedin
+                </a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </footer>
+      <!-- End footer for responsive -->
+    <!-- Footer for responsive 1024 -->
+
+    <footer class="footer1024 footer-margin-for-ir" style="background-color: #0E0E0E">
+      <br/>
+      <div class="container-fluid">
+
+        <div class="center-it">
+          <div style="padding:20px;">
+            <img src="../static/img/home-page/logo_horizontal.png" class="img-fluid" width="50%" />
+            <p style="font-family:'Open Sans'; font-size:1.5em; color:white;">Where expertise meet empathy</p>
+          </div>
+        </div>
+        <br/>
+       <div class="container-fluid" style="padding:20px;">
+        <div class="row">
+          <div class="col-2">
+            <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">About Us</p>
+              <a href="/who_we_are" class="footer-link"
+                style=" text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Who we are</a>
+              <br />
+              <a href="/what_we_do" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9m">What we do</a>
+              <br />
+              <a href="/our_mission" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Our misson</a>
+
+          </div>
+          <div class="col-4">
+            <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Our Solutions</p>
+                <a href="/multi-tenant-loyalty" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Multi-tenant
+                  loyalty
+                  solutions</a>
+                <br />
+                <a href="/marketing-campaigns" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Marketing
+                  campaigns</a>
+                <br />
+                <a href="/helpdesk-services" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Helpdesk
+                  services</a>
+                <br />
+                <a href="/data-analytics" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Data management
+                  and
+                  analytics</a>
+                <br />
+                <a href="/instant-rewards" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Instant
+                  rewards</a>
+                <br />
+                <a href="/content-and-creatives" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Content and
+                  creative
+                  services</a>
+                <br />
+                <a href="/robust-tech" class="footer-link"
+                  style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Robust
+                  Technology
+                </a>
+          </div>
+          <div class="col-3">
+            <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Loyalty Programs</p>
+              <a href="/multi-tenant-loyalty#channelloyalty" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Channel loyalty
+                programs</a>
+              <br />
+              <a href="/multi-tenant-loyalty#customerloyalty" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Customer loyalty
+                programs</a>
+              <br />
+              <a href="/multi-tenant-loyalty#employeernr" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Employee R&R</a>
+
+          </div>
+          <div class="col-3">
+            <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Contact Us</p>
+              <a href="mailto:info@loyaltyfox.com" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                </svg> &nbsp info@loyaltyfox.com
+              </a>
+              <br />
+              <a class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg> &nbsp 8802065822
+              </a>
+
+          </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="row">
+          
+          <hr style="height:2px; background-color: grey;"/>
+          <div class="footer-container3">
+            <div class="itemy1">
+              <p style="font-family: 'Open Sans';color:grey;font-size:1em">&copy &nbspTechtonic Media India Pvt. Ltd.</p>
+            </div>
+            <div class="itemy2">
+              <div style="display:flex;justify-content: flex-end;">
+                <a href="https://www.linkedin.com/company/14514361/admin/" class="footer-link"
+                  style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                  &nbsp Connect with us on Linkedin
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </footer>
+
+    <!-- End Footer for responsive 1024 -->
+    
+    <!-- Footer -->
+
+    <footer class="footer footer-margin-for-ir" >
+      <div class="footer-container">
+        <div class="footer-item1" style="display:flex; align-items:center; padding:20px;">
+          <div>
+            <img src="../static/img/home-page/logo_horizontal.png" class="img-fluid" width="70%" />
+            <p style="font-family:'Open Sans'; font-size:1em; color:white;">Where expertise meet empathy</p>
+          </div>
+
+        </div>
+        <div class="footer-item2">
+          <div class="footer-container2">
+            <div class="footer-itemx1" style="padding:20px;border:">
+              <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">About Us</p>
+              <a href="/who_we_are" class="footer-link"
+                style=" text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Who we are</a>
+              <br />
+              <a href="/what_we_do" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9m">What we do</a>
+              <br />
+              <a href="/our_mission" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Our misson</a>
+            </div>
+
+            <div class="footer-itemx2" style="padding:20px; ">
+              <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Our Solutions</p>
+              <a href="/multi-tenant-loyalty" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Multi-tenant
+                loyalty solutions</a>
+              <br />
+              <a href="/marketing-campaigns" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Marketing
+                campaigns</a>
+              <br />
+              <a href="/helpdesk-services" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Helpdesk
+                services</a>
+              <br />
+              <a href="/data-analytics" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Data management
+                and
+                analytics</a>
+              <br />
+              <a href="/instant-rewards" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Instant
+                rewards</a>
+              <br />
+              <a href="/content-and-creatives" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Content and
+                creative
+                services</a>
+              <br />
+              <a href="/robust-tech" class="footer-link"
+                style="text-decoration:none; font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Robust
+                Technology</a>
+            </div>
+
+            <div class="footer-itemx3" style="padding:20px;">
+              <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Loyalty Programs</p>
+              <a href="/multi-tenant-loyalty#channelloyalty" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Channel loyalty
+                programs</a>
+              <br />
+              <a href="/multi-tenant-loyalty#customerloyalty" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Customer loyalty
+                programs</a>
+              <br />
+              <a href="/multi-tenant-loyalty#employeernr" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">Employee R&R</a>
+
+
+            </div>
+            <div class="footer-itemx4" style="padding:20px;">
+              <p style="font-size: 'Open Sans'; font-weight: bold;color:white;font-size:1em">Contact Us</p>
+              <a href="mailto:info@loyaltyfox.com" class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                </svg> &nbsp info@loyaltyfox.com
+              </a>
+              <br />
+              <a class="footer-link"
+                style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg> &nbsp 8802065822
+              </a>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <hr style="height:2px; background-color:grey" />
+      <div class="footer-container3">
+        <div class="itemy1">
+          <p style="font-family: 'Open Sans';color:grey;font-size:1em">&copy &nbspTechtonic Media India Pvt. Ltd.</p>
+        </div>
+        <div class="itemy2">
+          <div style="display:flex;justify-content: flex-end;">
+            <a href="https://www.linkedin.com/company/14514361/admin/" class="footer-link"
+              style="text-decoration:none;font-family: 'Open Sans';cursor:pointer;font-size:0.9em">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+              &nbsp Connect with us on Linkedin
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- End Footer -->
+  
+  
+    <!-- ########################## END FOOTER AREA ######################################### -->
+   
+  </div>
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script>
+
+      function sideDrop1(){
+        
+        disp=document.getElementById("side-drop1").style.display;
+        
+        if(disp=="block"){
+          document.getElementById("side-drop1").style.display="none";
+          
+        }
+        if(disp=="none"){
+          document.getElementById("side-drop1").style.display="block";
+        }
+      }
+  
+      function sideDrop2(){
+        disp=document.getElementById("side-drop2").style.display;
+  
+        if(disp=="none"){
+          document.getElementById("side-drop2").style.display="block";
+        }
+        else if(disp=="block"){
+          document.getElementById("side-drop2").style.display="none";
+        }
+      }
+  
+      function navbarToggle() {
+        document.getElementById("sidebarid").style.display = "block";
+      }
+      function sidebarToggle() {
+        document.getElementById("sidebarid").style.display = "none";
+      }
+      function rewards_km() {
+        location.href = "/instant-rewards";
+      }
+      function foxtrot_km() {
+        location.href = "/robust-tech";
+      }
+      function aboutus_km() {
+        location.href = "/who_we_are";
+      }
+      function steps_km() {
+        location.href = "/what_we_do";
+      }
+  
+      function blogs_km() {
+        location.href = "/blogs";
+      }
+      function generic_km() {
+        location.href = "/contactUS";
+      }
+      function inst_rew_km(){
+        location.href="/rewards";
+      }
+  
+      function dropdown1() {
+        document.getElementById("dropdownx1").style.display = "block";
+      }
+      function dropdown2() {
+        document.getElementById("dropdownx2").style.display = "block";
+      }
+  
+      document.addEventListener('mouseup', function (e) {
+        var container1 = document.getElementById('dropdownx1');
+        var container2 = document.getElementById('dropdownx2');
+  
+        if (!container1.contains(e.target)) {
+          container1.style.display = 'none';
+        }
+        if (!container2.contains(e.target)) {
+          container2.style.display = 'none';
+        }
+      });
+  
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1", user-scalable="no">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="./static/css/style.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Loyalty Fox</title>
+    </head>
+      <body>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+        <script>
+          AOS.init();
+          window.addEventListener('load', function() {
+            AOS.refresh();
+          });
+        </script>
+        <!-- Start of navbar -->
+        <div class="navbar2">
+            <div class="navbar2_container">
+                <div class="navbar2_item1">
+                    <img class="img-fluid" src='../static/img/logo.png' width="30%"/>
+                </div>
+                <div class="navbar2_item2">
+                    <div class="navbar2_flex_item">
+                        <a class="active_link" href="/home">Home</a>
+                    </div>
+                    <div class="navbar2_flex_item">
+                      <div onclick="dropdown2()">
+                        <p class="main-links">About Us &nbsp 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                          </svg>
+                        </p>
+                  
+                      </div>    
+                      
+                        <div id="dropdownx2" class="dropdown2">
+                            <div class="dropdown_links">
+                              <p>
+                                <a class="drop-down-link" href="/who_we_are" >Who we are</a>
+                              </p>
+                              <hr style="background-color:grey;" />
+                              <p>
+                                <a  class="drop-down-link" href="/what_we_do">What we do</a>
+                              </p>
+                              <hr style="background-color:grey;"/>
+                              <p>
+                                <a class="drop-down-link" href="/our_mission">Our Mission</a>
+                              </p>
+                            </div>
+                        </div>
+              
+                    </div>
+                    <div class="navbar2_flex_item">
+                      <div class="dropdown1_trigger" onclick="dropdown1()">
+                        <p class="main-links" href="#">Our Solutions &nbsp<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                          </svg>
+                        </p>
+                      </div>
+                      
+                      <div id="dropdownx1" class="dropdown1">
+                        <div class="dropdown_links">
+                          <p>
+                            <a class="drop-down-link" href="/multi-tenant-loyalty">Multi-Tenant Loyalty Solutions</a>
+                          </p>
+                          <hr style="background-color:grey;"/>
+                          <p>
+                            <a class="drop-down-link" href="/marketing-campaigns">Marketing Campaigns</a>
+                          </p>
+                          <hr style="background-color:grey;"/>
+                          <p>
+                            <a class="drop-down-link" href="/helpdesk-services">Helpdesk Services</a>
+                          </p>
+                          <hr style="background-color:grey;"/>
+                          <p>
+                            <a class="drop-down-link" href="/data-analytics">Data Management and Analytics</a>
+                          </p>
+                          <hr style="background-color:grey;"/>
+                          <p>
+                            <a class="drop-down-link" href="/instant-rewards">Instant rewards</a>
+                          </p>
+                          <hr style="background-color:grey;"/>
+                          <p>
+                            <a class="drop-down-link" href="/content-and-creatives">Content and Creative Services</a>
+                          </p>
+                          <hr style="background-color:grey;"/>
+                          <p>
+                            <a class="drop-down-link" href="/robust-tech">Robust Technology</a>
+                          </p>
+                        </div>
+                      </div>
+          
+                    </div>
+                    <div class="navbar2_flex_item">
+                      <a class="main-links" href="/blogs">Blogs and Testimonials</a>
+                    </div>
+                    <div class="navbar2_flex_item">
+                      <a class="main-links" href="/ourteam">Our Team</a>
+                    </div>
+                    <div class="navbar2_flex_item">
+                      <a class="main-links" href="/contactUS">Contact Us</a>
+                    </div>
+                    <div class="navbar2_flex_itemx ">
+                      <div class="toggle-button-container2">
+                        <button class="toggle-button" onclick="navbarToggle()">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                        </button>
+                      </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sidebarid" class="sidebar">
+          <div style="float:right;">
+            <button onclick ="sidebarToggle()" style="color:black;font-size:30px;font-weight:bold; padding:10px; border:none; background-color:transparent;">&times</button>
+          </div>
+          <br/>
+          <br/>
+          <br/> 
+          <a class="sidebar-link" class="active" href="/home">Home</a>
+          <hr style=" background-color:rgb(98, 98, 98)"/>
+          <p class="x1" href="#"><b>About Us<b></p>
+            <a class="sidebar-link" href="/who_we_are">&nbspWho we are</a>
+            <a class="sidebar-link" href="/what_we_do">&nbspWhat we do</a>
+            <a class="sidebar-link" href="/our_mission">&nbspOur Mission</a>
+          <hr style="background-color:rgb(98, 98, 98)"/>
+          <p class="x1" href="#"><b>Our Solutions</b></p>
+          <a class="sidebar-link"  href="/multi-tenant-loyalty">&nbsp Multi-Tenant Loyalty Solutions</a>
+          <a class="sidebar-link" href="/marketing-campaigns">&nbsp Marketing Campaigns</a>
+          <a class="sidebar-link" href="/helpdesk-services">&nbsp Helpdesk Services</a>
+          <a class="sidebar-link" href="/data-analytics">&nbsp Data management and Analytics</a>
+          <a class="sidebar-link" href="/instant-rewards">&nbsp Instant Rewards</a>
+          <a class="sidebar-link" href="/content-and-creatives">&nbsp Content and creative services</a>
+          <a class="sidebar-link" href="/robust-tech">&nbsp Robust Technology</a>
+          <hr style="background-color:rgb(98, 98, 98)"/>
+          <a class="sidebar-link" href="/blogs">Blogs and Testimonials</a>
+          <a class="sidebar-link" href="/ourteam">Our Team</a>
+          <a class="sidebar-link" href="/contactUS">Contact Us</a>
+        </div>
+
+    <!-- End navbar and side bar -->
+
+
+
+        <script>
+          function navbarToggle(){
+            document.getElementById("sidebarid").style.display="block";
+          }
+          function sidebarToggle(){
+            document.getElementById("sidebarid").style.display="none";
+          }
+          function dropdown1(){
+            document.getElementById("dropdownx1").style.display="block";
+          }
+          function dropdown2(){
+            document.getElementById("dropdownx2").style.display="block";
+          }
+          document.addEventListener('mouseup', function(e) {
+            var container1 = document.getElementById('dropdownx1');
+            var container2 = document.getElementById('dropdownx2');
+            
+            if (!container1.contains(e.target)) {
+                container1.style.display = 'none';
+          }
+          if (!container2.contains(e.target)) {
+                container2.style.display = 'none';
+          }
+          
+          
+});
+        </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
